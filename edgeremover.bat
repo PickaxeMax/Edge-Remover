@@ -9,7 +9,16 @@ if %errorLevel% == 0 (
     exit /b
 )
 
-echo [2/6] Закрытие процессов Microsoft Edge...
+echo [2/6] Закрытие процессов и отключение служб Microsoft Edge...
+:: Останавливаем и отключаем службы обновлений
+sc config MicrosoftEdgeElevationService start= disabled >nul 2>&1
+sc stop MicrosoftEdgeElevationService >nul 2>&1
+sc config edgeupdate start= disabled >nul 2>&1
+sc stop edgeupdate >nul 2>&1
+sc config edgeupdatem start= disabled >nul 2>&1
+sc stop edgeupdatem >nul 2>&1
+
+:: Убиваем фоновые процессы
 taskkill /f /im msedge.exe >nul 2>&1
 taskkill /f /im MicrosoftEdgeUpdate.exe >nul 2>&1
 
