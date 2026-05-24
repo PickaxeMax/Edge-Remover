@@ -14,10 +14,17 @@
 
 ## 🚀 Инструкция по использованию
 
-1. Скачайте файл `edgeremover.bat` из этого репозитория.
+1. Скачайте файл `edgeremover.bat` (или .zip) из этого репозитория.
 2. Нажмите по скачанному файлу правой кнопкой мыши.
 3. Выберите **Запуск от имени администратора** (это необходимо для удаления системных файлов и работы с реестром).
 4. Дождитесь сообщения об успешном завершении и нажмите любую клавишу, чтобы закрыть окно.
+
+## 🛠️ Системные требования
+* Windows 10 или Windows 11
+* Права администратора
+
+---
+*Дисклеймер: Вы используете этот скрипт на свой страх и риск. Проект не связан с компанией Microsoft. Проект создан с помощью ИИ.*
 
 ## EN:
 # Edge Remover Script 🚫🌐
@@ -33,7 +40,7 @@ A simple, fast, and effective Windows `.bat` script to completely uninstall the 
 
 ## 🚀 How to Use
 
-1. Download the `remove_edge.bat` file from this repository.
+1. Download the `edgeremover.bat` (or .zip) file from this repository.
 2. Right-click on the downloaded file.
 3. Select **Run as administrator** (required to modify system files and registry).
 4. Wait for the success message and press any key to close the window.
@@ -44,10 +51,3 @@ A simple, fast, and effective Windows `.bat` script to completely uninstall the 
 
 ---
 *Disclaimer: Use this script at your own risk. This project is not affiliated with Microsoft. This project was made by AI.*
-
-## 🛠️ Системные требования
-* Windows 10 или Windows 11
-* Права администратора
-
----
-*Дисклеймер: Вы используете этот скрипт на свой страх и риск. Проект не связан с компанией Microsoft. Проект создан с помощью ИИ.*
