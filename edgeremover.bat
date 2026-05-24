@@ -35,7 +35,10 @@ del /f /q "%public%\Desktop\Microsoft Edge.lnk" >nul 2>&1
 del /f /q "%appdata%\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk" >nul 2>&1
 del /f /q "%programdata%\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk" >nul 2>&1
 del /f /q "%appdata%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Microsoft Edge.lnk" >nul 2>&1
-iexpress /n >nul 2>&1
+
+:: Перезапуск проводника для мгновенного обновления иконок без лишних окон
+taskkill /f /im explorer.exe >nul 2>&1
+start explorer.exe
 
 echo.
 echo === ГОТОВО! Edge удален, ярлыки стерты, обновления заблокированы. ===
